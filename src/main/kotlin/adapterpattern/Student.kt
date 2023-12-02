@@ -1,9 +1,9 @@
 package adapterpattern
 
 interface Student {
-    fun getName():String
+    fun getName(): String
 
-    fun getEmail():String
+    fun getEmail(): String
 
-    fun getAddress():String
+    fun getAddress(): String
 }

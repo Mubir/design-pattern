@@ -1,19 +1,19 @@
 package adapterpattern
 
 class SchoolStudent {
-    private val name:String = "Punu_mia"
-    val phone:Int = 880808080
-    private val address:String = "Hakata"
+    private val name: String = "Punu_mia"
+    val phone: Int = 880808080
+    private val address: String = "Hakata"
 
-    fun getName():String {
+    fun getName(): String {
         return this.name
     }
 
-     fun getEmail():Int {
+    fun getEmail(): Int {
         return this.phone
     }
 
-     fun getAddress():String {
+    fun getAddress(): String {
         return this.address
     }
 }
