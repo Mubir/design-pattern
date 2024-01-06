@@ -1,6 +1,7 @@
 package builderpattern
 
-class KDslBuilder(
+// private constructor so instance of this class can't be created in traditional way
+class KDslBuilder private constructor(
     val requiredProperty: String,
     val secondaryPropOne: Int? = null,
     val secondaryPropTwo: Long? = null
