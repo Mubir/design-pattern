@@ -1,4 +1,4 @@
-package factorypattern
+package factorypattern.legacy
 
 class ScienceStd: SSCstudent() {
     override fun compulsory(): String {

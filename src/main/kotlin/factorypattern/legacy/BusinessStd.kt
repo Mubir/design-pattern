@@ -1,6 +1,6 @@
-package factorypattern
+package factorypattern.legacy
 
-class BusinessStd:SSCstudent() {
+class BusinessStd: SSCstudent() {
     override fun compulsory(): String {
         return "commerce std"
     }

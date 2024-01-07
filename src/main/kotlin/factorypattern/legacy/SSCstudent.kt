@@ -1,4 +1,4 @@
-package factorypattern
+package factorypattern.legacy
 
 abstract class SSCstudent {
 

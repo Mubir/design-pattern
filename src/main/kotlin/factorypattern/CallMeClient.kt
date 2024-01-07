@@ -1,13 +1,7 @@
 package factorypattern
 
-fun main(arg: Array<String>) {
+fun main(array: Array<String>) {
+    val circle = ObjectCreator().createObj(FigureFactory.Type.CIRCLE)
 
-    var passMe = readln().toString()
-    val obj = when (passMe) {
-        "s" -> ScienceStd()
-        "b" -> BusinessStd()
-        else -> null
-    }
-
-    obj?.let { println(obj.toString()) }
+    println(circle.createManipulator().drag())
 }
