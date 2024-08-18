@@ -1,4 +1,4 @@
-package proxypattern.dynamicproxy;
+package proxypattern.dynamicproxy.logging;
 
 public interface Human {
 
