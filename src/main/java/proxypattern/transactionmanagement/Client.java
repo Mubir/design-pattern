@@ -6,7 +6,8 @@ public class Client {
     public static void main(String[] args) {
 
         // useSimpleProxy();
-        useJDKProxy();
+        //useJDKProxy();
+        useCGLibProxy();
     }
 
     public static void useSimpleProxy() {
@@ -15,7 +16,7 @@ public class Client {
 
         customerServiceProxy.save();
         customerServiceProxy.show().stream().forEach(System.out::println);
-        ;
+
     }
 
     public static void useJDKProxy() {
@@ -30,4 +31,13 @@ public class Client {
         obj.show().stream().forEach(System.out::println);
     }
 
+    public static void useCGLibProxy() {
+        DbOperation customer = new CustomerService();
+
+        CGLIBDynProxy cglibDynProxy = new CGLIBDynProxy();
+        DbOperation cgProxy = cglibDynProxy.createProxy(customer);
+
+        cgProxy.save();
+        //cgProxy.show().stream().forEach(System.out::println);
+    }
 }
